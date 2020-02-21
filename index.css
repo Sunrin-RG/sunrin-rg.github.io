@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* Animations */
+@keyframes floating {
+    100% {
+        transform: translateY(12px);
+    }
+}
+@keyframes spin {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* PC Screen */
+@media screen and (min-width: 1280px) {
+    /* Header */
+    header {
+        position: relative;
+
+        height: 80vh;
+        min-height: 800px;
+
+        color: #ffffff;
+        background-color: #2a2b59;
+
+        font-size: 20pt;
+    }
+    @media screen and (max-height: 840px) {
+        header {
+            height: 100vh;
+        }
+    }
+    header > .contents {
+        position: relative;
+
+        width: 100%;
+        max-width: 1280px;
+        height: 100%;
+
+        margin: 0 auto;
+    }
+
+    /* Text */
+    header .text {
+        position: absolute;
+        top: 30%;
+        left: 84px;
+    }
+
+    header .text .title {
+        font-size: 1.6em;
+        font-family: "RixGo EB";
+        text-transform: uppercase;
+    }
+    header .text .description {
+        text-align: right;
+
+        font-family: "RixGo M";
+    }
+    header .text hr {
+        width: 580px;
+
+        margin-top: 0.15em;
+        margin-bottom: 0.3em;
+
+        border: 0 solid #ffffff;
+        border-width: 1px 0;
+    }
+
+    /* Decorations */
+    header .deco .logo {
+        position: absolute;
+        bottom: 20%;
+        right: 110px;
+
+        width: 280px;
+
+        animation-name: floating;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+    header .deco .moon {
+        position: absolute;
+        top: 17.5%;
+        right: 420px;
+
+        width: 110px;
+    }
+    header .deco .stars {
+        position: absolute;
+        top: 32.5%;
+        right: 16px;
+
+        width: 540px;
+    }
+
+    header .deco .comet {
+        display: inline-block;
+        position: absolute;
+
+        transform-origin: left;
+        transform: rotateZ(-45deg);
+    }
+    header .deco .comet .head {
+        position: absolute;
+        height: 28px;
+    }
+    header .deco .comet .tail {
+        position: absolute;
+        top: 2px;
+        left: 28px;
+
+        height: 24px;
+    }
+    header .deco .comet:nth-child(1) {
+        bottom: 20%;
+        right: 670px;
+    }
+    header .deco .comet:nth-child(2) {
+        top: 27.5%;
+        right: 240px;
+    }
+    header .deco .comet:nth-child(2) .head {
+        transform: rotateZ(45deg);
+    }
+    header .deco .comet:nth-child(3) {
+        top: 17.5%;
+        right: 760px;
+    }
+}
