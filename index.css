@@ -27,7 +27,7 @@ html {
 
 /* PC Screen */
 @media screen and (min-width: 1280px) {
-    /* Header */
+    /* ----- Header ----- */
     header {
         position: relative;
 
@@ -63,13 +63,13 @@ html {
 
     header .text .title {
         font-size: 1.6em;
-        font-family: "RixGo EB";
+        font-family: "RixGo EB", sans-serif;
         text-transform: uppercase;
     }
     header .text .description {
         text-align: right;
 
-        font-family: "RixGo M";
+        font-family: "RixGo M", sans-serif;
     }
     header .text hr {
         width: 580px;
@@ -143,4 +143,15 @@ html {
         top: 17.5%;
         right: 760px;
     }
+    /* ----- Header ----- */
+
+    /* ----- Section ----- */
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 425px) {
 }
