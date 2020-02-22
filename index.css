@@ -183,7 +183,7 @@ html {
     #role .description {
         width: 600px;
         height: 300px;
-        
+
         padding: 34px 38px;
     }
     #role .description h2 {
@@ -218,6 +218,47 @@ html {
     #role .designer .description {
         background-color: #4e68ac;
         background-image: url("assets/images/panel_1.svg");
+    }
+    /* ----- Section ----- */
+
+    /* ----- Footer ----- */
+    footer {
+        display: flex;
+        justify-content: space-between;
+
+        height: 160px;
+        background-color: #2a2b59;
+    }
+
+    footer .text {
+        display: flex;
+        padding: 0 32px;
+    }
+    footer .text hr {
+        align-self: center;
+
+        width: 0;
+        height: 60%;
+
+        margin-right: 16px;
+
+        border: 1px solid #ffffff;
+        border-radius: 1px;
+    }
+    footer .text p {
+        align-self: center;
+
+        color: #ffffff;
+        font-family: noto-sans, sans-serif;
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+    footer .text a {
+        text-decoration: underline;
+    }
+
+    footer img {
+        height: 100%;
     }
 }
 
