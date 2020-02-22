@@ -5,7 +5,6 @@
     padding: 0;
 
     color: inherit;
-    font-family: "Noto Sans KR", sans-serif;
     text-decoration: inherit;
 
     -webkit-touch-callout: none;
@@ -55,6 +54,7 @@ html {
     @media screen and (max-height: 840px) {
         header {
             height: 100vh;
+            min-height: 0;
         }
     }
     header > .contents {
@@ -75,11 +75,14 @@ html {
     }
 
     header .text .title {
+        font-family: noto-sans, sans-serif;
         font-size: 1.6em;
+        font-weight: 600;
         text-transform: uppercase;
     }
     header .text .description {
-        font-weight: 300;
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-weight: 200;
         text-align: right;
     }
     header .text hr {
@@ -154,6 +157,68 @@ html {
     /* ----- Header ----- */
 
     /* ----- Section ----- */
+    section {
+        width: 100%;
+        max-width: 1280px;
+
+        margin: 128px auto;
+    }
+
+    /* Role Produce  */
+    #role {
+        color: #ffffff;
+    }
+
+    #role .group {
+        display: flex;
+        justify-content: space-between;
+
+        width: 915px;
+        margin: 0 auto;
+    }
+    #role img {
+        width: 300px;
+        height: 300px;
+    }
+    #role .description {
+        width: 600px;
+        height: 300px;
+        
+        padding: 34px 38px;
+    }
+    #role .description h2 {
+        font-family: noto-sans, sans-serif;
+        font-size: 3.25em;
+        font-weight: 100;
+    }
+    #role .description p {
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 1.1em;
+        font-weight: 200;
+        line-height: 1.75em;
+    }
+
+    #role .developer img {
+        background-color: #1f2144;
+    }
+    #role .developer .description {
+        text-align: right;
+
+        background-color: #303b83;
+        background-image: url("assets/images/panel_0.svg");
+    }
+
+    #role .designer {
+        flex-direction: row-reverse;
+        margin-top: 15px;
+    }
+    #role .designer img {
+        background-color: #7991c6;
+    }
+    #role .designer .description {
+        background-color: #4e68ac;
+        background-image: url("assets/images/panel_1.svg");
+    }
 }
 
 /* Tablet Screen */
