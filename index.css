@@ -81,9 +81,10 @@ html {
         text-transform: uppercase;
     }
     header .text .description {
+        text-align: right;
+
         font-family: noto-sans-cjk-kr, sans-serif;
         font-weight: 200;
-        text-align: right;
     }
     header .text hr {
         width: 580px;
@@ -163,6 +164,28 @@ html {
 
         margin: 128px auto;
     }
+    article {
+        margin: 64px auto;
+    }
+
+    /* introduce */
+    #introduce {
+        text-align: center;
+
+        color: #141516;
+        font-size: 1.3em;
+    }
+    #introduce .title {
+        margin-bottom: 8px;
+
+        font-family: noto-sans, sans-serif;
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+    #introduce p {
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-weight: 200;
+    }
 
     /* Role Produce  */
     #role {
@@ -186,7 +209,7 @@ html {
 
         padding: 34px 38px;
     }
-    #role .description h2 {
+    #role .description .title {
         font-family: noto-sans, sans-serif;
         font-size: 3.25em;
         font-weight: 100;
@@ -260,6 +283,7 @@ html {
     footer img {
         height: 100%;
     }
+    /* ----- Footer ----- */
 }
 
 /* Tablet Screen */
