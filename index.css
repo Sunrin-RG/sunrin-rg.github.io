@@ -5,7 +5,20 @@
     padding: 0;
 
     color: inherit;
+    font-family: "Noto Sans KR", sans-serif;
     text-decoration: inherit;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 body,
@@ -63,19 +76,14 @@ html {
 
     header .text .title {
         font-size: 1.6em;
-        font-family: "RixGo EB", sans-serif;
         text-transform: uppercase;
     }
     header .text .description {
+        font-weight: 300;
         text-align: right;
-
-        font-family: "RixGo M", sans-serif;
     }
     header .text hr {
         width: 580px;
-
-        margin-top: 0.15em;
-        margin-bottom: 0.3em;
 
         border: 0 solid #ffffff;
         border-width: 1px 0;
