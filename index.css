@@ -322,7 +322,7 @@ html {
     }
     #award .deco .bottom {
         position: absolute;
-        bottom: 0;
+        bottom: -64px;
         right: 0;
     }
 
