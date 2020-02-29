@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--Meta tags-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="author" content="Blro" />
+        <meta name="theme-color" content="#2a2b59" />
+        <meta name="title" content="RG: Republic of Game" />
+        <meta
+            name="description"
+            content="선린인터넷고등학교 소프트웨어과 게임 개발 동아리"
+        />
+        <meta name="subject" content="Republic of Game" />
+
+        <!--Opengraph-->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sunrin-rg.github.io/" />
+        <meta property="og:locale" content="ko" />
+        <meta property="og:site_naem" content="RG: Republic of Game" />
+        <meta property="og:title" content="RG: Republic of Game" />
+        <meta property="og:image" content="assets/images/opengraph.png" />
+        <meta
+            property="og:description"
+            content="선린인터넷고등학교 소프트웨어과 게임 개발 동아리"
+        />
+
+        <title>RG: Republic of Game</title>
+
+        <!--Redirect PC/Tablet-->
+        <script type="text/javascript">
+            if (screen.width > 425) {
+                document.location = "/";
+            }
+        </script>
+
+        <!--CSS Import-->
+        <link rel="stylesheet" href="https://use.typekit.net/bpk3rvn.css" />
+        <link rel="stylesheet" href="index.css" />
+        <script>
+            (function(d) {
+                var config = {
+                        kitId: "yfw0bfr",
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function() {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function() {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
