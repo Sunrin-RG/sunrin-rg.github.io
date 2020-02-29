@@ -150,6 +150,10 @@ footer img {
 
 /* PC Screen */
 @media screen and (min-width: 1280px) {
+    .tablet {
+        display: none;
+    }
+
     /* ----- Header ----- */
     header {
         position: relative;
@@ -526,6 +530,14 @@ footer img {
 
 /* Tablet Screen */
 @media screen and (max-width: 1280px) {
+    body {
+        min-width: 768px;
+    }
+
+    .pc {
+        display: none;
+    }
+
     /* ----- Header ----- */
     header {
         position: relative;
@@ -551,24 +563,26 @@ footer img {
     /* Text */
     header .text {
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 10%;
     }
 
     header .text .title {
         font-family: noto-sans, sans-serif;
-        font-size: 2em;
+        font-size: 2.2em;
         font-weight: 600;
+        line-height: 1.1em;
         text-transform: uppercase;
     }
     header .text .description {
         text-align: right;
 
         font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 1.1em;
         font-weight: 200;
     }
     header .text hr {
-        width: 360px;
+        width: 450px;
 
         border: 0 solid #ffffff;
         border-width: 1px 0;
@@ -577,10 +591,10 @@ footer img {
     /* Decorations */
     header .deco .logo {
         position: absolute;
-        bottom: 10%;
-        right: 96px;
+        bottom: 15%;
+        right: 80px;
 
-        width: 220px;
+        width: 180px;
 
         animation-name: floating;
         animation-duration: 2s;
@@ -588,27 +602,20 @@ footer img {
         animation-direction: alternate-reverse;
         animation-iteration-count: infinite;
     }
-    header .deco .moon {
-        display: none;
-    }
     header .deco .stars {
         position: absolute;
-        bottom: 15%;
-        right: -16px;
+        bottom: 10%;
+        right: 0;
 
-        width: 540px;
+        width: 480px;
     }
-
-    header .deco .comet:nth-child(1) {
-        right: 50%;
-        top: 20%;
-    }
-    header .deco .comet:nth-child(2) {
-        right: 20%;
-        top: 30%;
-    }
-    header .deco .comet:nth-child(3) {
-        display: none;
+    @media screen and (min-width: 1024px) {
+        header .deco .logo {
+            right: 160px;
+        }
+        header .deco .stars {
+            right: 80px;
+        }
     }
     /* ----- Header ----- */
 
