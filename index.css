@@ -23,7 +23,7 @@
 
 body,
 html {
-    height: 100vh;
+    height: 100%;
 }
 
 /* Animations */
@@ -463,13 +463,13 @@ html {
     /* Link */
     #link {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
-        width: 256px;
+        width: 160px;
         margin: 0 auto;
     }
     #link img {
-        height: 72px;
+        height: 64px;
     }
 
     /* ----- Section ----- */
