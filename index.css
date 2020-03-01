@@ -345,6 +345,151 @@ footer img {
         background-image: url("assets/images/panel_1.svg");
     }
 
+    /* Curriculum */
+    #curriculum {
+        margin-bottom: 256px;
+    }
+    #curriculum > .title {
+        margin-bottom: 32px;
+
+        color: #141516;
+        text-align: center;
+        font-family: noto-sans, sans-serif;
+    }
+    #curriculum > .title .main {
+        line-height: 0.8em;
+        font-size: 3.25em;
+        font-weight: 300;
+    }
+    #curriculum > .title .sub {
+        display: flex;
+        justify-content: center;
+
+        font-size: 2em;
+        font-weight: 300;
+    }
+    #curriculum > .title .sub::before,
+    #curriculum > .title .sub::after {
+        content: "";
+
+        display: block;
+        align-self: center;
+
+        width: 48px;
+        height: 4px;
+        margin: 0 8px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
+
+    #curriculum .node {
+        position: relative;
+
+        width: 32px;
+        height: 32px;
+        margin: 0 auto;
+
+        border: 4px solid #141516;
+        border-radius: 16px;
+
+        word-break: keep-all;
+        color: #141516;
+    }
+    #curriculum .node:first-child .title {
+        font-size: 2.5em;
+    }
+    #curriculum .node:not(:first-child) {
+        margin-top: 128px;
+    }
+    #curriculum .node:not(:first-child)::before {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        left: 10px;
+        bottom: 36px;
+
+        width: 4px;
+        height: 112px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
+    #curriculum .node:nth-child(2) {
+        margin-top: 64px;
+    }
+    #curriculum .node:nth-child(2)::before {
+        height: 48px;
+    }
+
+    #curriculum .node .title {
+        margin-bottom: 16px;
+
+        line-height: 0.5em;
+        font-size: 2em;
+        font-weight: 300;
+    }
+    #curriculum .node .description {
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 1em;
+        font-weight: 200;
+    }
+
+    #curriculum .node .left {
+        position: absolute;
+        top: 0;
+        right: 26px;
+
+        width: 425px;
+        padding-right: 36px;
+
+        text-align: right;
+    }
+    #curriculum .node .left::after {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        top: 10px;
+        right: 0;
+
+        width: 16px;
+        height: 4px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
+    #curriculum .node .right {
+        position: absolute;
+        top: 0;
+        left: 26px;
+
+        width: 425px;
+        padding-left: 36px;
+    }
+    #curriculum .node .right::after {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        top: 10px;
+        left: 0;
+
+        width: 16px;
+        height: 4px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
+
     /* Award */
     #award {
         max-width: 100%;
@@ -357,25 +502,25 @@ footer img {
         display: flex;
         justify-content: center;
 
-        width: 100%;
-        margin-bottom: 32px;
-    }
-    #award > .title .text {
-        text-align: center;
-
         margin: 0 16px;
+        margin-bottom: 32px;
 
+        text-align: center;
         font-family: noto-sans, sans-serif;
         font-size: 3.25em;
         font-weight: 100;
     }
-    #award > .title hr {
+    #award > .title::before,
+    #award > .title::after {
+        content: "";
+
+        display: block;
         align-self: center;
 
-        width: 124px;
+        width: 112px;
         height: 4px;
+        margin: 0 8px;
 
-        border: none;
         border-radius: 2px;
 
         background-color: #ffffff;
@@ -685,6 +830,150 @@ footer img {
         background-image: url("assets/images/panel_1.svg");
         background-position: right;
     }
+    
+    /* Curriculum */
+    #curriculum {
+        margin-bottom: 160px;
+    }
+    #curriculum > .title {
+        margin-bottom: 32px;
+
+        color: #141516;
+        text-align: center;
+        font-family: noto-sans, sans-serif;
+    }
+    #curriculum > .title .main {
+        line-height: 0.8em;
+        font-size: 3em;
+        font-weight: 300;
+    }
+    #curriculum > .title .sub {
+        display: flex;
+        justify-content: center;
+
+        font-size: 2em;
+        font-weight: 300;
+    }
+    #curriculum > .title .sub::before,
+    #curriculum > .title .sub::after {
+        content: "";
+
+        display: block;
+        align-self: center;
+
+        width: 48px;
+        height: 4px;
+        margin: 0 8px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
+
+    #curriculum .node {
+        position: relative;
+
+        width: 32px;
+        height: 32px;
+        margin: 0 auto;
+
+        border: 4px solid #141516;
+        border-radius: 16px;
+
+        word-break: keep-all;
+        color: #141516;
+    }
+    #curriculum .node:first-child .title {
+        font-size: 2em;
+    }
+    #curriculum .node:not(:first-child) {
+        margin-top: 128px;
+    }
+    #curriculum .node:not(:first-child)::before {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        left: 10px;
+        bottom: 36px;
+
+        width: 4px;
+        height: 112px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
+    #curriculum .node:nth-child(2) {
+        margin-top: 64px;
+    }
+    #curriculum .node:nth-child(2)::before {
+        height: 48px;
+    }
+
+    #curriculum .node .title {
+        margin-bottom: 16px;
+
+        line-height: 0.5em;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    #curriculum .node .description {
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-weight: 200;
+    }
+
+    #curriculum .node .left {
+        position: absolute;
+        top: 0;
+        right: 26px;
+
+        width: 340px;
+        padding-right: 36px;
+
+        text-align: right;
+    }
+    #curriculum .node .left::after {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        top: 10px;
+        right: 0;
+
+        width: 16px;
+        height: 4px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
+    #curriculum .node .right {
+        position: absolute;
+        top: 0;
+        left: 26px;
+
+        width: 340px;
+        padding-left: 36px;
+    }
+    #curriculum .node .right::after {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        top: 10px;
+        left: 0;
+
+        width: 16px;
+        height: 4px;
+
+        border-radius: 2px;
+
+        background-color: #141516;
+    }
 
     /* Award */
     #award {
@@ -697,23 +986,25 @@ footer img {
         justify-content: center;
 
         width: 100%;
-        margin-bottom: 24px;
-    }
-    #award > .title .text {
         margin: 0 16px;
+        margin-bottom: 24px;
 
         text-align: center;
         font-family: noto-sans, sans-serif;
         font-size: 3em;
         font-weight: 100;
     }
-    #award > .title hr {
+    #award > .title::before,
+    #award > .title::after {
+        content: "";
+
+        display: block;
         align-self: center;
 
         width: 96px;
         height: 4px;
+        margin: 0 8px;
 
-        border: none;
         border-radius: 2px;
 
         background-color: #ffffff;
@@ -723,7 +1014,7 @@ footer img {
         overflow-y: auto;
 
         max-width: calc(100% - 16px);
-        height: 300px;
+        height: 360px;
 
         margin: 0 auto;
     }
