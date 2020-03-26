@@ -1228,10 +1228,10 @@ footer img {
         font-family: noto-sans-cjk-kr, sans-serif;
         font-weight: 200;
     }
-    /* Introduce */
 
     /* Role */
     #role {
+        margin-bottom: 48px;
         text-align: center;
         color: #ffffff;
     }
@@ -1264,15 +1264,84 @@ footer img {
     #role .designer .description {
         background-color: #4e68ac;
     }
-    /* Role */
 
-    /* Curriculum */
-    /* Curriculum */
+    /* Award */
+    #award {
+        margin-bottom: 64px;
+        color: #ffffff;
+        background-color: #11141e;
+    }
+    #award > .title {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        margin-bottom: 16px;
+
+        text-align: center;
+        font-family: noto-sans, sans-serif;
+        font-size: 2.5em;
+        font-weight: 100;
+    }
+    #award > .title::before,
+    #award > .title::after {
+        content: "";
+
+        display: block;
+        align-self: center;
+
+        width: 64px;
+        height: 3px;
+        margin: 0 8px;
+
+        border-radius: 1.5px;
+
+        background-color: #ffffff;
+    }
+
+    #award .scroll-box {
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        max-width: calc(100% - 16px);
+        height: 360px;
+
+        margin: 0 auto;
+    }
+
+    #award .year {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 48px;
+    }
+    #award .year > .title {
+
+        text-align: center;
+        font-family: noto-sans, sans-serif;
+        font-size: 2em;
+        font-weight: 100;
+    }
+    #award .year .prize-list {
+        padding-top: 12px;
+    }
+
+    #award .year .prize {
+        display: flex;
+
+        margin-left: 48px;
+        margin-bottom: 18px;
+
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 1em;
+        font-weight: 200;
+    }
+    #award .prize .list {
+        width: 96px;
+    }
 
     /* ----- Section ----- */
-
     #curriculum,
-    #award,
     #info,
     #link,
     footer {
