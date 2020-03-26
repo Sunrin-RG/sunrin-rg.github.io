@@ -28,16 +28,8 @@
 
         <title>RG: Republic of Game</title>
 
-        <!--Redirect Mobile-->
-        <script type="text/javascript">
-            if (document.documentElement.clientWidth < 768) {
-                document.location.href = document.location.href + "mobile/";
-            }
-        </script>
-
-        <!--CSS Import-->
+        <!--Font Import-->
         <link rel="stylesheet" href="https://use.typekit.net/bpk3rvn.css" />
-        <link rel="stylesheet" href="index.css" />
         <script>
             (function(d) {
                 var config = {
@@ -70,6 +62,9 @@
                 s.parentNode.insertBefore(tk, s);
             })(document);
         </script>
+
+        <!--CSS Import-->
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body>
         <header>
@@ -83,13 +78,17 @@
                 </div>
                 <div class="deco">
                     <img class="logo" src="assets/images/rg_logo.svg" />
-                    <img class="moon pc" src="assets/images/moon.svg" />
-                    <img class="stars pc" src="assets/images/starts.svg" />
+                    <img class="moon large" src="assets/images/moon.svg" />
+                    <img class="stars large" src="assets/images/starts.svg" />
                     <img
-                        class="stars tablet"
-                        src="assets/images/stars_tablet.svg"
+                        class="stars medium"
+                        src="assets/images/stars_medium.svg"
                     />
-                    <div class="comets pc">
+                    <img
+                        class="stars small"
+                        src="assets/images/start_small.svg"
+                    />
+                    <div class="comets large">
                         <span class="comet">
                             <img
                                 class="head"
@@ -129,16 +128,22 @@
             <article id="introduce">
                 <h2 class="title">Introduce</h2>
                 <p>
-                    소프트웨어과 전공 동아리인 RG는 게임 개발 전문
-                    동아리입니다.<br />
-                    Unity 등의 사용 엔진과 동아리 자체 엔진을 이용해 직접
-                    개발하고<br />
-                    다양한 디자인 도구를 활용해 게임을 꾸며나갑니다.
+                    소프트웨어과 전공 동아리인 RG는
+                    <br class="small" />
+                    게임 개발 전문 동아리입니다.
+                    <br />
+                    Unity 등의 사용 엔진과 동아리 자체 엔진을
+                    <br class="small" />
+                    이용해 직접 개발하고
+                    <br class="large medium" />
+                    다양한 디자인 도구를
+                    <br class="small" />
+                    활용해 게임을 꾸며나갑니다.
                 </p>
             </article>
             <article id="role">
                 <div class="group developer">
-                    <img src="assets/images/developer.svg" />
+                    <img class="large" src="assets/images/developer.svg" />
                     <div class="description">
                         <h3 class="title">Developer</h3>
                         <p>
@@ -150,7 +155,7 @@
                     </div>
                 </div>
                 <div class="group designer">
-                    <img src="assets/images/designer.svg" />
+                    <img class="large" src="assets/images/designer.svg" />
                     <div class="description">
                         <h3 class="title">Designer</h3>
                         <p>
@@ -174,7 +179,7 @@
                             <h3 class="title">Developer</h3>
                         </div>
                         <div class="right">
-                            <h3 class="title">Photoshop</h3>
+                            <h3 class="title">Designer</h3>
                         </div>
                     </div>
                     <!--C | Photoshop-->
@@ -284,7 +289,7 @@
                 <h2 class="title">Award</h2>
                 <div class="scroll-box">
                     <div class="contents">
-                        <div class="deco">
+                        <div class="deco large">
                             <img
                                 class="top"
                                 src="assets/images/award_top.svg"
