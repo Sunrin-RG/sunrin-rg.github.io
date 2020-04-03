@@ -54,10 +54,16 @@ html {
 #award .scroll-box::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
-#award .prize .title {
+#award .year .prize {
     display: flex;
 
-    width: 256px;
+    font-family: noto-sans-cjk-kr, sans-serif;
+    font-weight: 200;
+}
+#award .prize .title {
+    flex-grow: 1;
+
+    display: flex;
     height: fit-content;
 }
 #award .prize .title hr {
@@ -74,6 +80,9 @@ html {
     background-position: bottom;
     background-size: 12px 1px;
     background-repeat: repeat-x;
+}
+#award .prize .list {
+    text-align: right;
 }
 
 /* Link */
@@ -539,19 +548,12 @@ html {
     #award .year .prize-list {
         padding-top: 12px;
     }
-
     #award .year .prize {
-        display: flex;
-
+        width: 320px;
         margin-left: 48px;
         margin-bottom: 24px;
 
-        font-family: noto-sans-cjk-kr, sans-serif;
         font-size: 1.1em;
-        font-weight: 200;
-    }
-    #award .prize .list {
-        width: 128px;
     }
 
     /* -- Information -- */
@@ -1035,17 +1037,11 @@ html {
     }
 
     #award .year .prize {
-        display: flex;
-
+        width: 320px;
         margin-left: 48px;
         margin-bottom: 18px;
 
-        font-family: noto-sans-cjk-kr, sans-serif;
         font-size: 1em;
-        font-weight: 200;
-    }
-    #award .prize .list {
-        width: 96px;
     }
 
     /* -- Information -- */
@@ -1611,25 +1607,24 @@ html {
     }
 
     #award .year .prize {
-        display: flex;
         justify-content: center;
 
+        width: 280px;
+        margin: 0 auto;
         margin-bottom: 18px;
 
-        font-family: noto-sans-cjk-kr, sans-serif;
         font-size: 1em;
-        font-weight: 200;
-    }
-    #award .prize .list {
-        width: 96px;
     }
 
     /* -- Info -- */
     #info {
         padding: 0 24px;
+        margin-bottom: 64px;
     }
 
     #info > div img {
+        align-self: center;
+
         width: 100px;
         height: 100px;
         margin-right: 16px;
@@ -1656,7 +1651,9 @@ html {
     /* Apply */
     #info .apply {
         display: flex;
-        margin-bottom: 16px;
+        position: relative;
+
+        margin-bottom: 64px;
     }
     #info .apply a {
         cursor: pointer;
@@ -1665,7 +1662,10 @@ html {
 
         display: inline-block;
 
-        margin-top: 8px;
+        position: absolute;
+        top: 100%;
+
+        margin-top: 16px;
         padding: 8px 16px;
 
         border: 1px solid #2a2b59;
