@@ -88,45 +88,6 @@ html {
     height: 64px;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
-
-    height: 160px;
-
-    background-color: #2a2b59;
-}
-footer .text {
-    display: flex;
-    padding: 0 32px;
-}
-footer .text hr {
-    align-self: center;
-
-    width: 0;
-    height: 60%;
-
-    margin-right: 16px;
-
-    border: 1px solid #ffffff;
-    border-radius: 1px;
-}
-footer .text p {
-    align-self: center;
-
-    color: #ffffff;
-    font-family: noto-sans, sans-serif;
-    font-size: 0.8em;
-    font-weight: 400;
-}
-footer .text a {
-    text-decoration: underline;
-}
-footer img {
-    height: 100%;
-}
-
 /* Large Size Style
  * 1280px ~
  */
@@ -674,8 +635,43 @@ footer img {
     /* ----- Section ----- */
 
     /* Footer */
-    footer {
+    footer > div {
+        display: flex;
+        justify-content: space-between;
+
+        height: 160px;
         margin-top: 128px;
+
+        background-color: #2a2b59;
+    }
+    footer .text {
+        display: flex;
+        padding: 0 32px;
+    }
+    footer .text hr {
+        align-self: center;
+
+        width: 0;
+        height: 60%;
+
+        margin-right: 16px;
+
+        border: 1px solid #ffffff;
+        border-radius: 1px;
+    }
+    footer .text p {
+        align-self: center;
+
+        color: #ffffff;
+        font-family: noto-sans, sans-serif;
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+    footer .text a {
+        text-decoration: underline;
+    }
+    footer img {
+        height: 100%;
     }
 }
 
@@ -1131,8 +1127,43 @@ footer img {
     /* ----- Section ----- */
 
     /* Footer */
-    footer {
+    footer > div {
+        display: flex;
+        justify-content: space-between;
+
+        height: 160px;
         margin-top: 64px;
+
+        background-color: #2a2b59;
+    }
+    footer .text {
+        display: flex;
+        padding: 0 32px;
+    }
+    footer .text hr {
+        align-self: center;
+
+        width: 0;
+        height: 60%;
+
+        margin-right: 16px;
+
+        border: 1px solid #ffffff;
+        border-radius: 1px;
+    }
+    footer .text p {
+        align-self: center;
+
+        color: #ffffff;
+        font-family: noto-sans, sans-serif;
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+    footer .text a {
+        text-decoration: underline;
+    }
+    footer img {
+        height: 100%;
     }
 }
 
@@ -1151,7 +1182,7 @@ footer img {
 
         position: relative;
         height: 100%;
-        
+
         margin-bottom: 48px;
 
         color: white;
@@ -1256,13 +1287,267 @@ footer img {
         font-weight: 200;
         line-height: 1.75em;
     }
-    
+
     #role .developer .description {
         margin-bottom: 16px;
         background-color: #303b83;
     }
     #role .designer .description {
         background-color: #4e68ac;
+    }
+
+    /* Curriculum */
+    #curriculum {
+        margin-bottom: 64px;
+    }
+    #curriculum > .title {
+        margin-bottom: 16px;
+
+        color: #141516;
+        text-align: center;
+        font-family: noto-sans, sans-serif;
+    }
+    #curriculum > .title .main {
+        line-height: 0.8em;
+        font-size: 2em;
+        font-weight: 300;
+    }
+    #curriculum > .title .sub {
+        display: flex;
+        justify-content: center;
+
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    #curriculum > .title .sub::before,
+    #curriculum > .title .sub::after {
+        content: "";
+
+        display: block;
+        align-self: center;
+
+        width: 24px;
+        height: 3px;
+        margin: 0 8px;
+
+        border-radius: 1.5px;
+
+        background-color: #141516;
+    }
+
+    #curriculum .scrollbar {
+        position: relative;
+
+        width: 256px;
+        height: 2px;
+
+        margin: 0 auto;
+        margin-bottom: 24px;
+
+        border-radius: 1px;
+
+        background-color: #2a2b59;
+    }
+    #curriculum .scrollbar .thumb {
+        display: block;
+
+        position: absolute;
+        top: -5px;
+        left: 0;
+
+        width: 48px;
+        height: 12px;
+
+        border-radius: 8px;
+
+        background-color: #2a2b59;
+    }
+
+    #curriculum .timeline {
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: normal;
+    }
+    #curriculum .timeline::-webkit-scrollbar {
+        display: none;
+    }
+
+    #curriculum .node {
+        display: flex;
+        position: relative;
+
+        width: 200%;
+        height: 24px;
+
+        word-break: keep-all;
+    }
+    #curriculum .node:first-child {
+        scroll-snap-align: start;
+    }
+    #curriculum .node:last-child {
+        scroll-snap-align: end;
+    }
+    #curriculum .node:last-child {
+        height: 100%;
+    }
+    #curriculum .node:not(:first-child) {
+        margin-top: 96px;
+    }
+    #curriculum .node:nth-child(2) {
+        margin-top: 32px;
+    }
+    #curriculum .node:not(:first-child)::before {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        bottom: 26px;
+        left: 42px;
+
+        width: 4px;
+        height: 92px;
+
+        border-radius: 2px;
+
+        background-color: #2a2b59;
+    }
+    #curriculum .node:nth-child(2)::before {
+        height: 28px;
+    }
+    #curriculum .node:last-child::before {
+        bottom: 72px;
+    }
+    #curriculum .node:not(:first-child)::after {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        bottom: 26px;
+        right: 42px;
+
+        width: 4px;
+        height: 92px;
+
+        border-radius: 2px;
+
+        background-color: #2a2b59;
+    }
+    #curriculum .node:nth-child(2)::after {
+        height: 28px;
+    }
+    #curriculum .node:last-child::after {
+        bottom: 72px;
+    }
+
+    #curriculum .node .title {
+        margin-bottom: 8px;
+
+        line-height: 0.9em;
+        font-size: 1.25em;
+        font-weight: 300;
+    }
+    #curriculum .node:first-child .title {
+        color: #1f2144;
+        line-height: 0.8em;
+        font-size: 1.5em;
+    }
+    #curriculum .node .left .description {
+        padding-right: 32px;
+
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 0.9em;
+        font-weight: 200;
+    }
+    #curriculum .node .right .description {
+        padding-left: 32px;
+
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 0.9em;
+        font-weight: 200;
+    }
+
+    #curriculum .node .left {
+        position: relative;
+        width: 50%;
+        padding-left: 72px;
+    }
+    #curriculum .node .left::before {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        left: 32px;
+        top: 0;
+
+        width: 16px;
+        height: 16px;
+
+        border: 4px solid #2a2b59;
+        border-radius: 18px;
+    }
+    #curriculum .node .left:not(:empty)::after {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        top: 9px;
+        left: 54px;
+
+        width: 10px;
+        height: 4px;
+
+        border-radius: 2px;
+
+        background-color: #2a2b59;
+    }
+
+    #curriculum .node .right {
+        position: relative;
+
+        width: 50%;
+        padding-right: 72px;
+
+        text-align: right;
+    }
+    #curriculum .node .right:first-child {
+        left: 50%;
+    }
+    #curriculum .node .right::before {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 32px;
+
+        width: 16px;
+        height: 16px;
+
+        border: 4px solid #2a2b59;
+        border-radius: 18px;
+    }
+    #curriculum .node .right:not(:empty)::after {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+        top: 9px;
+        right: 54px;
+
+        width: 10px;
+        height: 4px;
+
+        border-radius: 2px;
+
+        background-color: #2a2b59;
     }
 
     /* Award */
@@ -1316,7 +1601,6 @@ footer img {
         margin-bottom: 48px;
     }
     #award .year > .title {
-
         text-align: center;
         font-family: noto-sans, sans-serif;
         font-size: 2em;
@@ -1328,8 +1612,8 @@ footer img {
 
     #award .year .prize {
         display: flex;
+        justify-content: center;
 
-        margin-left: 48px;
         margin-bottom: 18px;
 
         font-family: noto-sans-cjk-kr, sans-serif;
@@ -1340,11 +1624,122 @@ footer img {
         width: 96px;
     }
 
-    /* ----- Section ----- */
-    #curriculum,
-    #info,
-    #link,
-    footer {
-        display: none;
+    /* -- Info -- */
+    #info {
+        padding: 0 24px;
     }
+
+    #info > div img {
+        width: 100px;
+        height: 100px;
+        margin-right: 16px;
+    }
+
+    #info .description {
+        display: flex;
+        flex-direction: column;
+
+        word-break: keep-all;
+        color: #141516;
+    }
+    #info .description .title {
+        font-family: noto-sans, sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    #info .description p {
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 0.9em;
+        font-weight: 200;
+    }
+
+    /* Apply */
+    #info .apply {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    #info .apply a {
+        cursor: pointer;
+
+        align-self: flex-end;
+
+        display: inline-block;
+
+        margin-top: 8px;
+        padding: 8px 16px;
+
+        border: 1px solid #2a2b59;
+        border-radius: 100px;
+
+        font-size: 0.9em;
+
+        transition: color 0.25s, background-color 0.25s;
+    }
+    #info .apply a:hover {
+        color: #ffffff;
+        background-color: #2a2b59;
+    }
+
+    /* Help */
+    #info .help {
+        display: flex;
+    }
+    #info .help .contact {
+        display: block;
+        margin-top: 8px;
+    }
+    /* -- Info -- */
+    /* ----- Section ----- */
+
+    /* ----- Footer ----- */
+    footer > div {
+        padding-top: 52px;
+        padding-bottom: 36px;
+
+        text-align: center;
+
+        color: #ffffff;
+        background-color: #2a2b59;
+        line-height: 1.5em;
+        font-family: noto-sans, sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    footer a {
+        text-decoration: underline;
+        font-size: 0.9em;
+    }
+    footer hr {
+        width: 160px;
+        margin: 24px auto;
+
+        border: 0.5px solid #ffffff3f;
+    }
+    footer > div > p {
+        margin-top: 24px;
+    }
+
+    footer .authors {
+        display: flex;
+        justify-content: center;
+    }
+    footer .authors p {
+        width: 128px;
+    }
+
+    /* Link */
+    #link {
+        display: flex;
+        justify-content: space-between;
+
+        width: 80px;
+    }
+    #link a {
+        height: 32px;
+    }
+    #link img {
+        height: 32px;
+        border-radius: 16px;
+    }
+    /* ----- Footer ----- */
 }

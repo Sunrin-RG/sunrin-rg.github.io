@@ -65,6 +65,9 @@
 
         <!--CSS Import-->
         <link rel="stylesheet" href="index.css" />
+
+        <!--JS Import-->
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -172,6 +175,9 @@
                     <h2 class="main">Curriculum</h2>
                     <span class="sub">2020</span>
                 </div>
+                <div class="scrollbar small">
+                    <span class="thumb"></span>
+                </div>
                 <div class="timeline">
                     <!--Developer | Designer-->
                     <div class="node">
@@ -202,6 +208,7 @@
                     </div>
                     <!-- | UI/UX-->
                     <div class="node">
+                        <div class="left small"></div>
                         <div class="right">
                             <h4 class="title">UI/UX</h4>
                             <p class="description">
@@ -238,6 +245,7 @@
                                 코드 작성뿐만이 아닌 그래픽 요소를 다룹니다
                             </p>
                         </div>
+                        <div class="right small"></div>
                     </div>
                     <!--C++ | Magica Voxel-->
                     <div class="node">
@@ -258,6 +266,7 @@
                     </div>
                     <!-- | 3Ds Max / Blender / Zbrush-->
                     <div class="node">
+                        <div class="left small"></div>
                         <div class="right">
                             <h4 class="title">3Ds Max / Blender / Zbrush</h4>
                             <p class="description">
@@ -443,7 +452,7 @@
                         <a>신청대기</a>
                     </div>
                 </div>
-                <hr />
+                <hr class="large medium" />
                 <div class="help">
                     <img src="assets/images/help.svg" />
                     <div class="description">
@@ -460,7 +469,7 @@
             </article>
         </section>
 
-        <div id="link">
+        <div id="link" class="large medium">
             <a href="https://www.facebook.com/sunrintrg" target="_blank">
                 <img src="assets/images/facebook.svg" />
             </a>
@@ -470,19 +479,63 @@
         </div>
 
         <footer>
-            <div class="text">
-                <hr />
+            <div class="large medium">
+                <div class="text">
+                    <hr />
+                    <p>
+                        Developed by
+                        <a
+                            href="https://github.com/GyeongTae0319"
+                            target="_blank"
+                            >Blro</a
+                        ><br />
+                        Designed by
+                        <a href="https://blog.naver.com/chy7424" target="_blank"
+                            >LyuSeolhwa</a
+                        ><br /><br />
+                        Earth icon made by
+                        <a
+                            href="https://www.flaticon.com/authors/freepik"
+                            target="_blank"
+                            >Freepik</a
+                        >
+                        from
+                        <a href="https://www.flaticon.com/" target="_blank"
+                            >www.flaticon.com</a
+                        ><br />
+                        Moon icon made by
+                        <a
+                            href="https://www.flaticon.com/authors/good-ware"
+                            target="_blank"
+                            >Good Ware</a
+                        >
+                        from
+                        <a href="https://www.flaticon.com/" target="_blank"
+                            >www.flaticon.com</a
+                        >
+                    </p>
+                </div>
+                <img src="assets/images/footer.svg" />
+            </div>
+            <div class="small">
+                <div class="authors">
+                    <p>
+                        Developed<br /><a
+                            href="https://github.com/GyeongTae0319"
+                            target="_blank"
+                            >Blro</a
+                        >
+                    </p>
+                    <p>
+                        Designed<br /><a
+                            href="https://blog.naver.com/chy7424"
+                            target="_blank"
+                            >LyuSeolhwa</a
+                        >
+                    </p>
+                </div>
                 <p>
-                    Developed by
-                    <a href="https://github.com/GyeongTae0319" target="_blank"
-                        >Blro</a
-                    ><br />
-                    Designed by
-                    <a href="https://blog.naver.com/chy7424" target="_blank"
-                        >LyuSeolhwa</a
-                    ><br /><br />
-                    Earth icon made by
-                    <a
+                    Earth Icon<br /><a
                         href="https://www.flaticon.com/authors/freepik"
                         target="_blank"
                         >Freepik</a
@@ -490,9 +543,10 @@
                     from
                     <a href="https://www.flaticon.com/" target="_blank"
                         >www.flaticon.com</a
-                    ><br />
-                    Moon icon made by
-                    <a
+                    >
+                </p>
+                <p>
+                    Moon Icon<br /><a
                         href="https://www.flaticon.com/authors/good-ware"
                         target="_blank"
                         >Good Ware</a
@@ -502,8 +556,19 @@
                         >www.flaticon.com</a
                     >
                 </p>
+                <hr />
+                <div id="link">
+                    <a
+                        href="https://www.facebook.com/sunrintrg"
+                        target="_blank"
+                    >
+                        <img src="assets/images/facebook.svg" />
+                    </a>
+                    <a href="https://github.com/Sunrin-RG" target="_blank">
+                        <img src="assets/images/github.svg" />
+                    </a>
+                </div>
             </div>
-            <img src="assets/images/footer.svg" />
         </footer>
     </body>
 </html>
