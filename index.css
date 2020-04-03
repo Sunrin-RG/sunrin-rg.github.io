@@ -1452,6 +1452,7 @@ html {
         font-size: 1.5em;
     }
     #curriculum .node .left .description {
+        min-height: 44px;
         padding-right: 32px;
 
         font-family: noto-sans-cjk-kr, sans-serif;
@@ -1459,6 +1460,7 @@ html {
         font-weight: 200;
     }
     #curriculum .node .right .description {
+        min-height: 44px;
         padding-left: 32px;
 
         font-family: noto-sans-cjk-kr, sans-serif;
