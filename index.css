@@ -1622,6 +1622,12 @@ html {
         margin-bottom: 64px;
     }
 
+    #info > div {
+        display: flex;
+
+        max-width: 500px;
+        margin: 0 auto;
+    }
     #info > div img {
         align-self: center;
 
@@ -1631,6 +1637,8 @@ html {
     }
 
     #info .description {
+        flex-grow: 1;
+
         display: flex;
         flex-direction: column;
 
@@ -1650,9 +1658,7 @@ html {
 
     /* Apply */
     #info .apply {
-        display: flex;
         position: relative;
-
         margin-bottom: 64px;
     }
     #info .apply a {
@@ -1681,9 +1687,6 @@ html {
     }
 
     /* Help */
-    #info .help {
-        display: flex;
-    }
     #info .help .contact {
         display: block;
         margin-top: 8px;
