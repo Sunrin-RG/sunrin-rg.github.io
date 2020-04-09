@@ -322,7 +322,7 @@ html {
 
     /* Curriculum */
     #curriculum {
-        margin-bottom: 256px;
+        margin-bottom: 160px;
     }
     #curriculum > .title {
         margin-bottom: 32px;
@@ -464,6 +464,203 @@ html {
         border-radius: 2px;
 
         background-color: #2a2b59;
+    }
+
+    /* Video */
+    #video {
+        max-width: 100vw;
+        margin-bottom: 128px;
+    }
+    #video > .title {
+        margin-bottom: 32px;
+
+        color: #141516;
+        text-align: center;
+        line-height: 0.8em;
+        font-family: noto-sans, sans-serif;
+        font-size: 3.25em;
+        font-weight: 300;
+    }
+
+    #video .scroll-box {
+        overflow-x: scroll;
+
+        display: flex;
+
+        height: 320px;
+
+        margin: 0 auto;
+        padding: 8px 0;
+
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+    }
+    #video .scroll-box::-webkit-scrollbar {
+        height: 6px;
+    }
+    #video .scroll-box::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: rgba(126, 126, 126, 0.5);
+    }
+    #video .scroll-box::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(126, 126, 126, 0.8);
+    }
+
+    #video .obj-video {
+        display: inline-block;
+        position: relative;
+
+        width: 480px;
+        height: 100%;
+
+        scroll-snap-align: center;
+    }
+    #video .obj-video:not(:last-child) {
+        margin-right: 64px;
+    }
+    #video .obj-video:first-child {
+        margin-left: calc(50% - 240px);
+    }
+    #video .obj-video:last-child {
+        width: calc(240px + 50%);
+        padding-right: calc(50% - 240px);
+    }
+    #video .obj-video .thumbnail {
+        cursor: pointer;
+
+        display: block;
+
+        position: relative;
+        bottom: 0;
+        right: 0;
+
+        width: 480px;
+        height: 270px;
+
+        box-shadow: #2a2b59 0px 0px;
+        background-position: center;
+
+        transition: bottom 0.1s cubic-bezier(0, 0, 1, 1),
+            right 0.1s cubic-bezier(0, 0, 1, 1),
+            box-shadow 0.1s cubic-bezier(0, 0, 1, 1);
+    }
+    #video .obj-video .thumbnail::before {
+        content: "";
+
+        z-index: -1;
+
+        display: block;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 50%;
+        height: 0;
+
+        transform-origin: bottom left;
+        transform: rotateZ(-45deg);
+
+        background-color: #2a2b59;
+
+        transition: height 0.1s cubic-bezier(0, 0, 1, 1),
+            bottom 0.1s cubic-bezier(0, 0, 1, 1),
+            left 0.1s cubic-bezier(0, 0, 1, 1);
+    }
+    #video .obj-video .thumbnail::after {
+        content: "";
+
+        z-index: -1;
+
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 50%;
+        height: 0;
+
+        transform-origin: top right;
+        transform: rotateX(180deg) rotateZ(45deg);
+
+        background-color: #2a2b59;
+
+        transition: height 0.1s cubic-bezier(0, 0, 1, 1),
+            top 0.1s cubic-bezier(0, 0, 1, 1),
+            right 0.1s cubic-bezier(0, 0, 1, 1);
+    }
+    #video .obj-video .thumbnail:hover {
+        bottom: 8px;
+        right: 8px;
+
+        box-shadow: #2a2b59 8px 8px;
+    }
+    #video .obj-video .thumbnail:hover::before {
+        bottom: -8px;
+        left: 8px;
+
+        height: 11px;
+    }
+    #video .obj-video .thumbnail:hover::after {
+        top: 8px;
+        right: -8px;
+
+        height: 11px;
+    }
+    #video .obj-video h3 {
+        text-align: center;
+        font-family: noto-sans-cjk-kr, sans-serif;
+        font-size: 1.2em;
+        font-weight: 200;
+    }
+    #video .obj-video .btn-play {
+        position: absolute;
+        top: calc(50% - 32px);
+        left: calc(50% - 32px);
+
+        width: 64px;
+        height: 64px;
+    }
+
+    #video #viewer {
+        z-index: 1;
+
+        display: none;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    #video #viewer.show {
+        display: block;
+    }
+    #video #viewer .btn-close {
+        cursor: pointer;
+
+        position: absolute;
+        top: 32px;
+        right: 32px;
+
+        width: 32px;
+        height: 32px;
+    }
+    #video #videoPlayer {
+        position: absolute;
+        top: calc(50% - 360px);
+        left: calc(50% - 640px);
+
+        width: 1280px;
+        height: 720px;
+
+        border: none;
+
+        background-color: #ffffff;
     }
 
     /* Award */
@@ -1364,7 +1561,7 @@ html {
         overflow-y: hidden;
 
         scroll-snap-type: x mandatory;
-        scroll-snap-stop: normal;
+        scroll-snap-stop: always;
     }
     #curriculum .timeline::-webkit-scrollbar {
         display: none;
@@ -1384,8 +1581,6 @@ html {
     }
     #curriculum .node:last-child {
         scroll-snap-align: end;
-    }
-    #curriculum .node:last-child {
         height: 100%;
     }
     #curriculum .node:not(:first-child) {

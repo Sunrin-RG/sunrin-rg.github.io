@@ -26,20 +26,20 @@
             content="선린인터넷고등학교 소프트웨어과 게임 개발 동아리"
         />
 
-        <link rel="icon" href="assets/images/favicon/228.png">
+        <link rel="icon" href="assets/images/favicon/228.png" />
         <title>RG: Republic of Game</title>
 
         <!--Font Import-->
         <link rel="stylesheet" href="https://use.typekit.net/bpk3rvn.css" />
         <script>
-            (function(d) {
+            (function (d) {
                 var config = {
                         kitId: "yfw0bfr",
                         scriptTimeout: 3000,
-                        async: true
+                        async: true,
                     },
                     h = d.documentElement,
-                    t = setTimeout(function() {
+                    t = setTimeout(function () {
                         h.className =
                             h.className.replace(/\bwf-loading\b/g, "") +
                             " wf-inactive";
@@ -51,7 +51,7 @@
                 h.className += " wf-loading";
                 tk.src = "https://use.typekit.net/" + config.kitId + ".js";
                 tk.async = true;
-                tk.onload = tk.onreadystatechange = function() {
+                tk.onload = tk.onreadystatechange = function () {
                     a = this.readyState;
                     if (f || (a && a != "complete" && a != "loaded")) return;
                     f = true;
@@ -66,9 +66,6 @@
 
         <!--CSS Import-->
         <link rel="stylesheet" href="index.css" />
-
-        <!--JS Import-->
-        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -293,6 +290,30 @@
                             </p>
                         </div>
                     </div>
+                </div>
+            </article>
+            <article id="video" class="large">
+                <h2 class="title">Video</h2>
+                <div class="scroll-box">
+                    <div
+                        class="obj-video"
+                        data-id="BRwUJa9e6cQ"
+                        data-title="2020 RG 홍보 영상 #1"
+                    ></div>
+                    <div
+                        class="obj-video"
+                        data-id="JFoFTreG2AY"
+                        data-title="2020 RG 홍보 영상 #2"
+                    ></div>
+                </div>
+                <div class="scroll-index"></div>
+                <div id="viewer">
+                    <img
+                        class="btn-close"
+                        src="assets/images/btn-close.svg"
+                        alt="닫기 버튼"
+                    />
+                    <div id="videoPlayer"></div>
                 </div>
             </article>
             <article id="award">
@@ -571,5 +592,8 @@
                 </div>
             </div>
         </footer>
+
+        <!--JS Import-->
+        <script src="index.js"></script>
     </body>
 </html>
