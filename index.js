@@ -73,6 +73,7 @@ function stopVideo() {
     videoViewer.classList.remove("show");
 }
 
+// Constrol video
 document.addEventListener("keydown", stopVideo);
 // Setup video viewer //
 // ----- Video Setup ----- //
