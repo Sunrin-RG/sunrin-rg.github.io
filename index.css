@@ -1961,7 +1961,7 @@ html {
 
         display: flex;
 
-        height: 300px;
+        height: fit-content;
 
         margin: 0 auto;
         padding: 8px 0;
@@ -2001,6 +2001,7 @@ html {
         width: 100vw;
         height: 56.25vw;
 
+        background-size: cover;
         background-position: center;
     }
     #video .obj-video h3 {
