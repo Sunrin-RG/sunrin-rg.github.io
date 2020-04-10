@@ -74,6 +74,10 @@ function stopVideo() {
 }
 
 // Constrol video
-document.addEventListener("keydown", stopVideo);
+document.addEventListener("keydown", (event) => {
+    if (event.key == "Escape") {
+        stopVideo();
+    }
+});
 // Setup video viewer //
 // ----- Video Setup ----- //
