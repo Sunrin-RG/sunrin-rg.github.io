@@ -1806,7 +1806,7 @@ html {
         height: 28px;
     }
     #curriculum .node:last-child::before {
-        bottom: 72px;
+        top: -94px;
     }
     #curriculum .node:not(:first-child)::after {
         content: "";
@@ -1828,7 +1828,7 @@ html {
         height: 28px;
     }
     #curriculum .node:last-child::after {
-        bottom: 72px;
+        top: -94px;
     }
 
     #curriculum .node .title {
