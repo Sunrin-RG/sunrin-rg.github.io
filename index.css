@@ -61,28 +61,59 @@ html {
     font-weight: 200;
 }
 #award .prize .title {
+    width: max-content;
+    white-space: nowrap;
+}
+#award .prize .list {
     flex-grow: 1;
 
-    display: flex;
-    height: fit-content;
+    text-align: right;
 }
-#award .prize .title hr {
+#award .prize .item {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    margin-bottom: calc(1em + 8px);
+}
+#award .prize .item .rate {
+    white-space: nowrap;
+}
+#award .prize .item:first-child .rate {
+    display: flex;
+}
+#award .prize .item:first-child .rate::before {
+    content: "";
+
     flex-grow: 1;
+
+    display: block;
 
     align-self: center;
 
     height: 1px;
     margin: 0 8px;
 
-    border: none;
-
     background-image: linear-gradient(to right, #ffffff 30%, #ffffff00 0%);
     background-position: bottom;
     background-size: 12px 1px;
     background-repeat: repeat-x;
 }
-#award .prize .list {
-    text-align: right;
+#award .prize .item .team {
+    position: absolute;
+    top: 1.8em;
+    right: 0;
+
+    white-space: nowrap;
+
+    font-size: 0.8em;
+}
+#award .prize .item .team::before {
+    content: "(";
+}
+#award .prize .item .team::after {
+    content: ")";
 }
 
 /* Link */
@@ -733,11 +764,14 @@ html {
 
     #award .year {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
 
         margin-bottom: 64px;
     }
     #award .year > .title {
+        margin-bottom: 16px;
+
+        text-align: center;
         font-family: noto-sans, sans-serif;
         font-size: 3em;
         font-weight: 100;
@@ -746,8 +780,8 @@ html {
         padding-top: 12px;
     }
     #award .year .prize {
-        width: 320px;
-        margin-left: 48px;
+        width: 420px;
+        margin: 0 auto;
         margin-bottom: 24px;
 
         font-size: 1.1em;
@@ -1417,11 +1451,12 @@ html {
 
     #award .year {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
 
         margin-bottom: 48px;
     }
     #award .year > .title {
+        text-align: center;
         font-family: noto-sans, sans-serif;
         font-size: 2.5em;
         font-weight: 100;
@@ -1431,8 +1466,8 @@ html {
     }
 
     #award .year .prize {
-        width: 320px;
-        margin-left: 48px;
+        width: 360px;
+        margin: 0 auto;
         margin-bottom: 18px;
 
         font-size: 1em;
