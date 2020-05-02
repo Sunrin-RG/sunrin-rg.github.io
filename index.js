@@ -9,6 +9,7 @@ timeline.addEventListener("scroll", () => {
 // Mobile timeline setup //
 
 // Video scroll setup //
+// Scrollbar custom
 var vdScrollBox = document.querySelector("#video .scroll-box");
 var vdScrollbar = document.querySelector("#video .scrollbar");
 var vdScrollThumb = document.querySelector("#video .scrollbar .thumb");
@@ -22,16 +23,22 @@ for (let i = 0; i < vdScrollBox.childElementCount; i++) {
 
     var index = document.createElement("span");
     index.classList.add("index");
-    index.addEventListener("click", () => {
-        var max = vdScrollBox.scrollWidth - vdScrollBox.clientWidth;
-        vdScrollBox.scrollTo({
-            left: (max / vdScrollBox.childElementCount) * i,
-            behavior: "smooth",
-        });
-    });
     vdScrollbar.appendChild(index);
 }
 
+// Scroll index click event
+var vdScrollIndex = document.querySelectorAll("#video .scrollbar .index");
+vdScrollIndex.forEach((e, n) => {
+    e.addEventListener("click", () => {
+        var max = vdScrollBox.scrollWidth - vdScrollBox.clientWidth;
+        vdScrollBox.scrollTo({
+            left: (max / (vdScrollBox.childElementCount - 1)) * n,
+            behavior: "smooth",
+        });
+    });
+});
+
+// Scroll event
 vdScrollBox.addEventListener("scroll", () => {
     var max = vdScrollBox.scrollWidth - vdScrollBox.clientWidth;
     vdScrollThumb.style.left =
