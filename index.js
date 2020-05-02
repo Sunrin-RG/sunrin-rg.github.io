@@ -8,6 +8,37 @@ timeline.addEventListener("scroll", () => {
 });
 // Mobile timeline setup //
 
+// Video scroll setup //
+var vdScrollBox = document.querySelector("#video .scroll-box");
+var vdScrollbar = document.querySelector("#video .scrollbar");
+var vdScrollThumb = document.querySelector("#video .scrollbar .thumb");
+
+for (let i = 0; i < vdScrollBox.childElementCount; i++) {
+    if (i) {
+        var cut = document.createElement("span");
+        cut.classList.add("cut");
+        vdScrollbar.appendChild(cut);
+    }
+
+    var index = document.createElement("span");
+    index.classList.add("index");
+    index.addEventListener("click", () => {
+        var max = vdScrollBox.scrollWidth - vdScrollBox.clientWidth;
+        vdScrollBox.scrollTo({
+            left: (max / vdScrollBox.childElementCount) * i,
+            behavior: "smooth",
+        });
+    });
+    vdScrollbar.appendChild(index);
+}
+
+vdScrollBox.addEventListener("scroll", () => {
+    var max = vdScrollBox.scrollWidth - vdScrollBox.clientWidth;
+    vdScrollThumb.style.left =
+        (vdScrollBox.scrollLeft / max) *
+            (vdScrollbar.clientWidth - vdScrollThumb.clientWidth) +
+        "px";
+});
 // ----- Video Setup ----- //
 
 // Setup youtube API //
