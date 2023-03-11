@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Layout, SectionTitle, SectionSubtitle } from "../styles/atomic";
+import background from "../assets/video.png";
 
 const Container = styled.div`
     width: 100%;
     height: 100vh;
-    background: #05071c;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #05071c;
+    background-image: url(${background});
 `;
 
 const Content = styled.div`

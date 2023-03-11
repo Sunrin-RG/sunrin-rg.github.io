@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Layout, SectionTitle, SectionSubtitle } from "../styles/atomic";
+import background from "../assets/award.png";
 
 const Container = styled.div`
     width: 100%;
     height: 100vh;
-    background: #05071c;
+    background-color: #05071c;
+    background-image: url(${background});
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +83,7 @@ const Award = () => {
     return (
         <Container>
             <Layout>
-                <SectionTitle>award</SectionTitle>
+                <SectionTitle>award</SectionTitle>
                 <SectionSubtitle>
                     RG 부원들이 이뤄낸 업적들이에요!
                 </SectionSubtitle>

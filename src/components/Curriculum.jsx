@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import background from "../assets/cur.png";
 import {
     Layout,
     SectionTitle,
@@ -10,7 +11,8 @@ import {
 const Container = styled.div`
     width: 100%;
     height: 100vh;
-    background: #05071c;
+    background-color: #05071c;
+    background-image: url(${background});
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,11 +67,16 @@ const Curriculum = () => {
                     <CurContent>
                         <CT>개발자</CT>
                         <C>
-                            게임 기획 이론 <br />
-                            C/C# 문법 <br />
-                            Unity 구조와 객체 <br />
-                            Unity 2D/3D <br />
-                            C++
+                            게임기획 이론 <br />
+                            C#문법
+                            <br />
+                            유니티 2D기초
+                            <br />
+                            유니티 2D기본
+                            <br />
+                            유니티 2D심화
+                            <br />
+                            유니티 3D개발
                         </C>
                     </CurContent>
                     <CurContent>

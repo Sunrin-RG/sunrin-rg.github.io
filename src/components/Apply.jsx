@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import background from "../assets/apply.png";
 
 const Layout = styled.div`
     display: flex;
@@ -8,7 +9,8 @@ const Layout = styled.div`
     align-items: center;
     width: 100%;
     height: 402px;
-    background: #05071c;
+    background-color: #05071c;
+    background-image: url(${background});
     @media (max-width: 768px) {
         flex-direction: column;
         height: 600px;
@@ -30,7 +32,7 @@ const Column = styled.div`
 const Line = styled.div`
     width: 1px;
     height: 284px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.6);
     @media (max-width: 768px) {
         width: 200px;
         height: 1px;
@@ -38,7 +40,7 @@ const Line = styled.div`
 `;
 
 const Title = styled.div`
-    font-family: "Berlin Sans FB Demi";
+    font-family: "BRLNSDB";
     font-style: normal;
     font-weight: 700;
     font-size: 42px;

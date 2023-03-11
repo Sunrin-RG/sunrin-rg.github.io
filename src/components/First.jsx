@@ -41,7 +41,7 @@ const LearnMore = styled.div`
 `;
 
 const Title = styled.div`
-    font-family: "Berlin Sans FB Demi";
+    font-family: "BRLNSDB";
     font-style: normal;
     font-weight: 700;
     font-size: 70px;

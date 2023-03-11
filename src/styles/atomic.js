@@ -10,7 +10,7 @@ export const Layout = styled.div`
 `;
 
 export const SectionTitle = styled.div`
-    font-family: "Berlin Sans FB Demi";
+    font-family: "BRLNSDB";
     font-size: 76px;
     color: white;
     @media (max-width: 768px) {

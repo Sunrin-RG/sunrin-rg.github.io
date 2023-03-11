@@ -27,12 +27,11 @@ const Introduce = () => {
                 <SectionTitle>introduce</SectionTitle>
                 <SectionSubtitle>RG는 이런 동아리입니다!</SectionSubtitle>
                 <SectionContent>
-                    소프트웨어과 전공 동아리인 RG는 게임개발 전문 동아리입니다.
+                    소프트웨어과 전공 동아리인 RG는 게임개발 전문 동아리입니다.{" "}
                     <br />
-                    Unity 등의 사용 엔진과 동아리 자체 엔진을 이용해 직접
-                    개발하고
-                    <br />
-                    다양한 디자인 도구를 활용해 게임을 꾸며 나갑니다. <br />
+                    Unity 등의 엔진을 이용해 기초 기본 심화 과정을 거쳐서 직접
+                    개발하고 <br />
+                    다양한 디자인 도구를 활용해 게임을 꾸며 나갑니다.
                 </SectionContent>
             </Layout>
         </Container>
